@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container"></div> <!-- Corazones y gatitos flotantes -->
+
+    <div class="container">
+        <div class="letter">
+            <div class="cover" onclick="openLetter()">💌 Toca para abrir</div>
+            <div class="inside">
+                <canvas id="scratchCanvas"></canvas>
+                <p class="hidden-message">Código: <span id="giftCode">XXXX-XXXX-XXXX</span></p>
+                <p id="copyMessage" class="copy-message">Código copiado ✔</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reproductor de música oculto -->
+    <audio id="bgMusic" loop>
+        <source src="tu-cancion.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
